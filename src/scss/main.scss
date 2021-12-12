@@ -25,6 +25,10 @@ p {
             padding: 25px;
             border: 1px solid #E5E5E5;
             margin-bottom: 30px;
+
+            &--red {
+                border-color: red;
+            }
         }
         &__top {
             display: flex;
