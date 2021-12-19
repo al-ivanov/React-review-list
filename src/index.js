@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReviewList from './components/ReviewList.jsx';
+import App from './App';
 import './scss/main.scss';
 
 ReactDOM.render(
-    <ReviewList />,
+    <App />,
   document.getElementById('root')
 );
 

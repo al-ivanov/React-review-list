@@ -1,0 +1,60 @@
+$gray-ext-0: rgb(232, 232, 232);
+$gray-ext-1: rgb(85, 90, 102);
+$gray-ext-2: rgb(20, 20, 20);
+$red-ext-1: rgb(186, 62, 48);
+
+.b-accordeon {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+
+    .accordeon {
+        &__item {
+            cursor: default;
+            padding: 1.5rem 3rem;
+            word-break: break-all;
+            border: 1px solid #eaeaea;
+            margin-bottom: 1em;
+    
+            &.opened {
+                .accordeon__icon {
+                    transform: rotate(90deg);
+                    fill: $red-ext-1;
+                }
+            }
+    
+            &:focus {    
+                &__header{
+                    color: $red-ext-1;
+                }
+            }
+        }
+    
+        &__header {
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            color: $gray-ext-2;
+        }
+    
+        &__title {
+            word-break: break-all;
+            word-wrap: break-word;
+            margin-right: 1em;
+        }
+        &__icon {
+            flex: none;
+            transition: transform 0.1s ease-in-out;
+            margin-left: auto;
+            width: 1rem;
+            height: 1rem;
+            line-height: 1rem;
+            fill: $gray-ext-1;
+        }
+        &__content {
+            margin-top: 1rem;
+        }
+    }
+}
