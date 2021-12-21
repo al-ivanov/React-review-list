@@ -1,0 +1,64 @@
+#app {
+    margin: auto;
+    width: 500px;
+    padding: 0px 15px;
+}
+
+.header {
+    margin: auto;
+    text-align: center;
+}
+
+.form {
+    margin-bottom: 40px;
+}
+
+.form__input {
+    font-size: 16px;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.form__submit {
+    float: right;
+    padding: 10px;
+    background-color: darkorange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.form__submit:hover {
+    background-color: #d17300;
+}
+
+.todolist {
+    width: 100%;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.todo {
+    border: 1px solid #d8d8d8; 
+    border-radius: 5px;
+    margin: 5px 0px;
+    background-color: #e8e8e8;
+    position: relative;
+    padding: 20px 20px;
+}
+
+.todo__delete {
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    background-color: red;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+.todo__delete:hover {
+    background-color: #b80000;
+}
